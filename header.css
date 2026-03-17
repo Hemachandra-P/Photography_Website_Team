@@ -127,7 +127,7 @@ img {
 }
 
 .header {
-    background-image: url(./images/header.jpeg);
+    background-image: url(../design/header.jpg);
     min-height: 100vh;
     background-color: #111;
     background-position: top right;
@@ -169,7 +169,7 @@ img {
 
 /* ======= Footer style ======= */
 .footer {
-    background-image: url(./images/bg-footer.jpg);
+    background-image: url(../design/bg-footer.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,3 +311,33 @@ img {
 html {
     scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Add focus-in effect to navbar logo */
+.logo-wrapper a {
+    /* ...existing styles... */
+    transition: color 0.5s;
+}
+.logo-wrapper a:hover {
+    color: #ffd700;
+    text-shadow: 0 2px 12px #111a;
+}
+/* Navbar links subtle fade on hover */
+.navbar .navbar-links a {
+    /* ...existing styles... */
+    transition: color 0.3s;
+}
+.navbar .navbar-links a:hover {
+    color: #fff;
+}
+/* Add transition to images */
+img, .gallery img {
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.6s;
+}
+.grid-wrapper img:hover,
+.about-img .img img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 4px 32px 0 #1114;
+}
+
+/* (rest of your header.css remains unchanged) */
